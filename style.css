@@ -1,0 +1,95 @@
+:root {
+    --cell-size: 100px;
+}
+
+body {
+    align-items: center;
+    background-color: #ccf2ff;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 30px;
+}
+
+.hidden { 
+    display: none;
+}
+
+.startBtn, .restartBtn {
+    border: 1px solid #0000ff;
+    border-radius: 10px;
+    background-color: #0000ff;
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
+.board {
+    align-items: center;
+    background-color: blue;
+    border: 5px solid black;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 650px;
+    width: 750px;
+}
+
+.currentPlayer {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    align-items: center;
+    background-color: #FFF;
+    border: 5px solid darkblue;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: var(--cell-size);
+    width: var(--cell-size);
+    
+}
+
+.square:hover {
+    background-color:  #33ccff;
+
+}
+
+.player1 {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 100%;
+    height: 50%;
+    width: 50%;
+}
+
+.player2 {
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 100%;
+    height: 50%;
+    width: 50%;
+}
+
+.gameOverArea{
+    background-color: #41ff33;
+    border-radius: 20px;
+    padding-top: 20px;
+} 
