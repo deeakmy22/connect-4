@@ -130,9 +130,9 @@ const writeChip = (row, column) => {
 };
 
 // When I use async/await with delays or time intervals, I can create a new Promise and use setTimeout, which also sets a delay but only triggers once.
-function delay(ms) {
+const delay = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
-}
+};
 
 // This function helps me animate the chips, they will apear in the selected column from the top to bottom,
 // creating a temporary chip that will go down, adding a new temporary chip in the next row,
